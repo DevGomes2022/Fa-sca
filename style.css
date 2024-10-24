@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    height: auto;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+/*---------------BANNER---------------*/
+
+.banner {
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: 600px;
+    background-image: url(imgs/lula\ avião.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+@media (max-width: 700px) {
+    .banner-img {
+        height: 400px;
+    }
+}
+
+.banner-text {
+    text-align: center;
+    padding-top: 110px;
+}
+
+.banner-text p {
+    font-size: 22px;
+    font-family: "Oxanium";
+    color: #c91161;
+    font-weight: 700;
+    text-shadow:black 0px 0px 10px;
+    cursor: context-menu;
+}
+
+.banner-text h1 {
+    padding-top:10px;
+    font-size: 46px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-weight: 800;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: context-menu;
+    text-shadow:rgba(0, 0, 0, 0.3) 0px 0px 20px;
+}
+
+@media (max-width: 950px) {
+    .banner-text h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-text h1 {
+        font-size: 24px;
+    }
+}
+
+/*---------------CATEGORIAS---------------*/
+
+.categorias {
+    width: 100%;
+    padding-top: 100px;
+}
+
+@media (max-width: 630px) {
+    .categorias {
+        padding-top: 50px;
+    }
+}
+
+.categ-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categ-list li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.categ-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px 16px 16px;
+    text-decoration: none;
+    background-color: #c91161;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Montserrat";
+    transition: 0.4s;
+    text-shadow:rgba(0, 0, 0, 0.3) 0px 0px 20px;
+}
+
+.categ-list li a:hover {
+    background-color: #86053d;
+    transform: translateY(-6px);
+}
+
+@media (max-width: 700px) {
+    .categ-list li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    .categ-list li a {
+        font-size: 12px;
+        padding: 10px 10px 12px 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .categ-list li  {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 465px) {
+    .categ-list li a {
+        padding: 5px 5px 7px 7px;
+    }
+}
+
+@media (max-width: 415px) {
+    .categ-list li a {
+        padding: 3px 3px 5px 5px;
+    }
+}
+
+@media (max-width: 415px) {
+    .categ-list li {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+
+/*---------------POSTAGENS-RECENTES---------------*/
+
+.postrecentes {
+    width: 80vw;
+    margin: auto;
+}
+
+.postrecentes > h1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-shadow:rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    cursor: context-menu;
+}
+
+@media (max-width: 700px) {
+    .postrecentes > h1 {
+        font-size: 36px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 460px) {
+    .postrecentes > h1 {
+        font-size: 25px;
+    }
+}
+
+.postbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postbox-sep {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .postbox {
+        display: block;
+    }
+}
+
+.postbox-not {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    .postbox-not {
+        
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+}
+
+.postbox-not img {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 700px) {
+    .postbox-not img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.postbox-not a img {
+    transition: 0.3s;
+}
+
+.postbox-not a img:hover {
+    transform: translateY(-6px);
+}
+
+.postbox-not h1 {
+    width: 300px;
+    font-size: 16px;
+    font-family: "Oxanium";
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .postbox-not h1{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 800;
+    }
+}
+
+.postbox-not p {
+    width: 300px;
+    font-size: 13px;
+    font-family: "Montserrat";
+    padding: 5px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .postbox-not p{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.postbox-not-click a {
+    color: #c91161;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Oxanium";
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.postbox-not-click a:hover {
+    background-color: #86053d62;
+    color: #66052f;
+}
+
+@media (max-width: 1300px) {
+    .postbox-sep {
+        display: block;
+    }
+}
+
+/*---------------FOOTER---------------*/
+
+footer {
+    background-color: #1b1b1b;
+    color: white;
+    margin-top: 100px;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #c7c7c7;
+}
+
+
+#instagram-f img {
+    width: 30px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#instagram-f img:hover {
+    transform: translateY(-3px);
+}
+
+#twitter-f img {
+    width: 30px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#twitter-f img:hover {
+    transform: translateY(-3px);
+}
