@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -174,6 +176,7 @@
 .postrecentes {
     width: 80vw;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 .postrecentes > h1 {
@@ -308,6 +311,442 @@
 @media (max-width: 1300px) {
     .postbox-sep {
         display: block;
+    }
+}
+
+/*---------------POSTAGEM-ANTIGA---------------*/
+
+.postantigos {
+    width: 80vw;
+    margin: auto;
+}
+
+.postantigos > h1 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-shadow:rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    cursor: context-menu;
+}
+
+@media (max-width: 700px) {
+    .postantigos > h1 {
+        font-size: 36px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 460px) {
+    .postantigos > h1 {
+        font-size: 25px;
+    }
+}
+
+.postantigobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postantigobox-sep {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .postantigobox-sep {
+        display: block;
+    }
+}
+
+.postantigobox-not {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+@media (max-width: 1350px) {
+    .postantigobox-not {
+        width: 150px;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .postantigobox-not {
+        width: 125px;
+        height: auto;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .postantigobox-not {
+        width: 100px;
+        height: auto;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 700px) {
+    .postantigobox-not {
+        width: 200px;
+        height: auto;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 415px) {
+    .postantigobox-not {
+        width: 150px;
+        height: auto;
+        margin: 2px;
+    }
+}
+
+.postantigobox-not img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1350px) {
+    .postantigobox-not img{
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .postantigobox-not img{
+        width: 125px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 850px) {
+    .postantigobox-not img{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .postantigobox-not img{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 415px) {
+    .postantigobox-not img{
+        width: 150px;
+        height: 100px;
+    }
+}
+
+.postantigobox-not a img {
+    transition: 0.3s;
+}
+
+.postantigobox-not a img:hover {
+    transform: translateY(-6px);
+}
+
+.postantigobox-not h1 {
+    width: 200px;
+    font-size: 16px;
+    font-family: "Oxanium";
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+@media (max-width: 1350px) {
+    .postantigobox-not h1{
+        width: 150px;
+        font-size:14px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 1050px) {
+    .postantigobox-not h1{
+        width: 125px;
+        font-size:12px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 850px) {
+    .postantigobox-not h1{
+        width: 100px;
+        font-size:10px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 700px) {
+    .postantigobox-not h1{
+        width: 200px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 415px) {
+    .postantigobox-not h1{
+        width: 150px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
+
+.postantigobox-not-click a {
+    color: #c91161;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Oxanium";
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.postantigobox-not-click a:hover {
+    background-color: #86053d62;
+    color: #66052f;
+}
+
+/*---------------INFORMAÇÕES-INPORTANTES---------------*/
+
+.infoimportante {
+    width: 500px;
+    height: 340px;
+    background-color: #1b1a1a;
+    margin: auto;
+    border-radius: 7px;
+}
+
+@media (max-width: 550px) {
+    .infoimportante {
+        width: 100vw;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 440px) {
+    .infoimportante {
+        height: 280px;
+    }
+}
+
+.infoimportante h1 {
+    background-color: #66052f;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat";
+    padding: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
+}
+
+@media (max-width: 550px) {
+    .infoimportante h1 {
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 440px) {
+    .infoimportante h1 {
+        font-size: 20px;
+    }
+}
+
+.linha-dolar ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linha-dolar ul li {
+    list-style-type: none;
+}
+
+.linha-dolar p {
+    color: white;
+    font-size: 26px;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+.linha-euro ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linha-euro ul li {
+    list-style-type: none;
+}
+
+.linha-euro p {
+    color: white;
+    font-size: 26px;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+.linha-selic ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linha-selic ul li {
+    list-style-type: none;
+}
+
+.linha-selic p {
+    color: white;
+    font-size: 26px;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+@media (max-width: 550px) {
+    .linha-dolar p,.linha-euro p,.linha-selic p {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linha-dolar p,.linha-euro p,.linha-selic p {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .linha-dolar p,.linha-euro p,.linha-selic p {
+        padding-left: 50px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .linha-dolar p,.linha-euro p,.linha-selic p {
+        padding-left: 30px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .linha-dolar p,.linha-euro p,.linha-selic p {
+        padding-left: 20px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+/*---------------DOLAR---------------*/
+
+.cotdolar {
+    font-size: 26px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 190px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+@media (max-width: 440px) {
+    .cotdolar {
+        padding-left: 160px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+/*---------------EURO---------------*/
+
+.coteuro {
+    font-size: 26px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 209px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+@media (max-width: 440px) {
+    .coteuro {
+        padding-left: 179px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+/*---------------INFLAÇÃO---------------*/
+
+.taxaselic {
+    font-size: 26px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 130px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px;
+}
+
+@media (max-width: 440px) {
+    .taxaselic {
+        padding-left: 100px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+
+.temporeal {
+    text-align: center;
+    color: #c91161;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-shadow: rgba(201, 17, 97, 0.3) 0px 0px 10px;
+}
+
+@media (max-width: 440px) {
+    .temporeal {
+        font-size: 12px;
     }
 }
 
